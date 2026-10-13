@@ -1,0 +1,27 @@
+[
+  {
+    "titulo": "Adufe & Companhia",
+    "url": "https://adufecompanhia.blog",
+    "categoria": "Música"
+  },
+  {
+    "titulo": "Aventuras por Lisboa",
+    "url": "https://aventuraslisboa.pt",
+    "categoria": "Viagens"
+  },
+  {
+    "titulo": "Blog do João",
+    "url": "https://blogdojoao.pt",
+    "categoria": "Tecnologia"
+  },
+  {
+    "titulo": "Caderno de Viagem",
+    "url": "https://cadernodeviagem.pt",
+    "categoria": "Viagens"
+  },
+  {
+    "titulo": "Farol Literário",
+    "url": "https://farolliterario.pt",
+    "categoria": "Livros"
+  }
+]
