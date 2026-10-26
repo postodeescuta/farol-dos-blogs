@@ -69,7 +69,7 @@ function renderizar(lista) {
             </a>
 
 <span class="url">
-    ${blog.url.replace('https://', '').replace('http://', '')}
+    ${blog.url}
 </span>
         `;
 
