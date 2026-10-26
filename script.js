@@ -68,9 +68,9 @@ function renderizar(lista) {
                 ${blog.titulo}
             </a>
 
-            <span class="url">
-                ${blog.url.replace(/^https?:\\/\\//, "")}
-            </span>
+<span class="url">
+    ${blog.url.replace('https://', '').replace('http://', '')}
+</span>
         `;
 
         directory.appendChild(row);
