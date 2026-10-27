@@ -32,6 +32,9 @@ header {
 .lighthouse {
     font-size: 60px;
     margin-bottom: 10px;
+    width:160px;
+    height:160px;
+    bakcground: url(https://postodeescuta.github.io/farol-dos-blogs/images/lighthouse.png) no-repeat top center;
 }
 
 header h1 {
