@@ -31,7 +31,7 @@ header {
 
 .lighthouse {
     font-size: 60px;
-    margin-bottom: 10px;
+    margin: auto;
     width:160px;
     height:160px;
     background: url(https://postodeescuta.github.io/farol-dos-blogs/images/lighthouse.png) no-repeat top center;
