@@ -53,43 +53,4 @@ function renderizar(lista) {
 
             letra.className = "letter";
             letra.id = letraAtual;
-            letra.textContent = letraAtual;
-
-            directory.appendChild(letra);
-
-        }
-
-        const row = document.createElement("div");
-
-        row.className = "blog";
-
-        row.innerHTML = `
-            <a href="${blog.url}" target="_blank">
-                ${blog.titulo}
-            </a>
-
-<span class="url">
-    ${blog.url}
-</span>
-        `;
-
-        directory.appendChild(row);
-
-    });
-
-}
-
-search.addEventListener("input", () => {
-
-    const termo = search.value.toLowerCase();
-
-    const filtrados = blogs.filter(blog =>
-
-        blog.titulo.toLowerCase().includes(termo) ||
-        blog.url.toLowerCase().includes(termo)
-
-    );
-
-    renderizar(filtrados);
-
-});
+            letra.textContent = letraAtual
