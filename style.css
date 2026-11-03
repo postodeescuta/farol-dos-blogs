@@ -43,8 +43,8 @@ header h1 {
 }
 
 header h1 a, header h1 a:link, header h1 a:visited {
-    text-transform: none;
-    color: white;
+    text-decoration: none;
+    text-color: white;
 }
 
 header p {
