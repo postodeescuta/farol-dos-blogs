@@ -72,11 +72,13 @@ function renderizar(lista) {
         `;
 
         if (blog.urlsapo) {
+
             html += `
                 <span class="urlsapo">
                     Arquivo SAPO: ${blog.urlsapo}
                 </span>
             `;
+
         }
 
         row.innerHTML = html;
@@ -88,3 +90,17 @@ function renderizar(lista) {
 }
 
 search.addEventListener("input", () => {
+
+    const termo = search.value.toLowerCase();
+
+    const filtrados = blogs.filter(blog =>
+
+        (blog.titulo || "").toLowerCase().includes(termo) ||
+        (blog.url || "").toLowerCase().includes(termo) ||
+        (blog.urlsapo || "").toLowerCase().includes(termo)
+
+    );
+
+    renderizar(filtrados);
+
+});
