@@ -42,6 +42,11 @@ header h1 {
     margin-bottom: 10px;
 }
 
+header h1 a, header h1 a:link, header h1 a:visited {
+    text-transform: none;
+    color: white;
+}
+
 header p {
     opacity: 0.9;
 }
