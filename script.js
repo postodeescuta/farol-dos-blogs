@@ -75,7 +75,7 @@ function renderizar(lista) {
 
             html += `
                 <span class="urlsapo">
-                    Arquivo SAPO: ${blog.urlsapo}
+                    Arquivo: ${blog.urlsapo}
                 </span>
             `;
 
