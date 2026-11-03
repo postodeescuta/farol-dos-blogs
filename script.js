@@ -63,21 +63,23 @@ function renderizar(lista) {
 
         row.className = "blog";
 
-        row.innerHTML = `
+        let html = `
             <a href="${blog.url}" target="_blank">
                 ${blog.titulo}
             </a>
 
-            <span class="url">
-                ${blog.url}
-            </span>
-
-            ${blog.urlsapo ? `
-                <span class="urlsapo">
-                    Antigo SAPO: ${blog.urlsapo}
-                </span>
-            ` : ""}
+            <span class="url">${blog.url}</span>
         `;
+
+        if (blog.urlsapo) {
+            html += `
+                <span class="urlsapo">
+                    Arquivo SAPO: ${blog.urlsapo}
+                </span>
+            `;
+        }
+
+        row.innerHTML = html;
 
         directory.appendChild(row);
 
@@ -86,20 +88,3 @@ function renderizar(lista) {
 }
 
 search.addEventListener("input", () => {
-
-    const termo = search.value.toLowerCase();
-
-    const filtrados = blogs.filter(blog =>
-
-        blog.titulo.toLowerCase().includes(termo) ||
-
-        blog.url.toLowerCase().includes(termo) ||
-
-        (blog.urlsapo &&
-         blog.urlsapo.toLowerCase().includes(termo))
-
-    );
-
-    renderizar(filtrados);
-
-});
